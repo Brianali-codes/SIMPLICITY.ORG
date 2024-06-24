@@ -1,0 +1,539 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.background {
+    height: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.main {
+    background-color: transparent;
+    height: 500vh;
+    margin: none;
+    scroll-snap-type: mandatory;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 570px;
+    position: fixed;
+    padding: 2px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 2px;
+
+}
+
+.container1 {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+    width: 50%;
+}
+
+.subheading {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: -80px;
+    font-size: 30px;
+}
+
+#heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 120px;
+    color: white;
+    margin-left: -5px;
+}
+
+.description {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    margin-top: -100px;
+    font-size: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+
+}
+
+.logo:hover {
+    animation: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+.logo-link {
+    padding: 1px;
+}
+
+.main2 {
+    gap: 100px;
+}
+
+.content {
+    height: 100vh;
+    width: 97vw;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-left: 0px;
+
+}
+
+.content2 {
+    height: 100vh;
+    width: 97vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.Getstarted {
+    background-color: teal;
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.Ourplans {
+    background-color: transparent;
+    width: 120px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+
+}
+
+.Ourplans:hover {
+    scale: 1.01;
+}
+
+.Getstarted:hover,
+.Ourplans:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.Getstarted:active,
+.Ourplans:active {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.Home,
+.About,
+.Plans,
+.Contacts,
+.Reviews {
+    background-color: transparent;
+    border: none;
+    color: white;
+    
+
+}
+
+.Home:hover,
+.About:hover,
+.Plans:hover,
+.Contacts:hover,
+.Reviews:hover {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 255, 136);
+    cursor: pointer;
+
+}
+
+.Home:active,
+.About:active,
+.Plans:active,
+.Contacts:active,
+.Reviews:active {
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+
+}
+
+#image {
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+    margin-left: -90px;
+}
+
+.image {
+    margin-top: 160px;
+}
+
+.About-description {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    height: 60vh;
+    padding: 10px;
+
+}
+
+.about-description {
+    color: black;
+    font-size: 20px;
+    font-family: cursive;
+
+}
+
+.content3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 40px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.plan1,
+.plan2 {
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    border-radius: 20px;
+    gap: -1px;
+    padding: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+.plan3 {
+    width: 330px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+    border-radius: 20px;
+    gap: -1px;
+    padding: 5px;
+    border-style: solid;
+    border-color: white;
+
+
+}
+
+.plan1:hover,
+.plan2:hover,
+.plan3:hover {
+    cursor: pointer;
+    scale: 1.01;
+    transition: 0.5s;
+    background-color: rgb(0, 0, 0);
+    animation: change-color;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+
+}
+
+.content4 {
+    height: 100vh;
+
+}
+
+.contacts {
+    height: 60vh;
+    margin-top: 200px;
+
+}
+
+.plan-text {
+    color: white;
+}
+
+.get-plan {
+    background-color: rgb(43, 255, 0);
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.get-plan:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    animation: shake;
+    animation-duration: 0.5s;
+
+}
+
+.get-plan:active {
+    background-color: red;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.icon-label {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-label:hover {
+    animation: shake;
+    animation-duration: 0.3s;
+    cursor: pointer;
+}
+
+.basic-plan-heading {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.price {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(4, 0, 255);
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-prices {
+    margin-top: -30px;
+    gap: -1px;
+}
+
+.start {
+    height: 40px;
+    margin-top: -7px;
+    background-color: teal;
+    border-color: transparent;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+}
+
+.start:hover {
+    background-color: transparent;
+    cursor: pointer;
+    border-color: black;
+}
+
+.start:active {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.faq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: white;
+    margin-top: 12px;
+    margin-left: 100px;
+
+}
+
+.faq-button:hover {
+    background-color: gray;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+@keyframes spin {
+    25% {
+        transform: rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    75% {
+        transform: rotateZ(270deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotateZ(-5deg);
+    }
+
+    25% {
+        transform: rotateZ(5deg);
+    }
+
+    50% {
+        transform: rotateZ(-5deg);
+    }
+
+    100% {
+        transform: rotateZ(5deg);
+    }
+}
+
+@keyframes change-color {
+    0% {
+        border-color: red;
+    }
+
+    50% {
+        border-color: green;
+    }
+
+    100% {
+        border-color: blue;
+    }
+}
+@keyframes slide-in-top{
+
+    from{transform: translateY(-150px);}
+
+}
+.contacts {
+    background-color: transparent;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info{
+    background-color:black;
+    color: white;
+    width: 97vw;
+}
+
+.FORM1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-arranger{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    width: 700px;
+    height: 700px;
+    border-radius: 20px;
+    color: white;
+    animation: slide-in-top;
+    animation-duration: 1s;
+
+
+
+}
+#submit-button{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+#submit-button:hover{
+    background-color: rgb(0, 255, 128);
+    color: white;
+    cursor: pointer;
+}
+#form-inputs{
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(211, 211, 211);
+    border: none;
+
+
+}
+.form-description{
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+.select-menu{
+    width: 170px;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+}
+@media only screen and (max-width: 720px) {
+    
+    .plan3{
+        display:flex;
+        flex-direction: column;
+        align-items:center ;
+        justify-content: center;
+    }
+
+
+
+}
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="background" background="images/web-final (2).jpg">
+
+    <div class="FORM1 m-4" >
+
+
+        <form action="https://formsubmit.co/your@email.com" method="POST" id="form-arranger">
+
+            <div>
+                <p class="form-description" >Full Name.*</p>
+                <input type="text" name="name" required id="form-inputs">
+            </div>
+            <div>
+                <p class="form-description">Email.*</p>
+                <input type="email" name="email" required id="form-inputs">
+            </div>
+            <div>
+                <p class="form-description">Organisation/business Name</p>
+                <input type="text" id="form-inputs" name="msg" >
+            </div>
+            <div>
+                <p class="form-description">Phone Number.*</p>
+                <input type="text" required id="form-inputs" name="msg">
+            </div>
+            <div>
+                <p class="form-description">I have a Business*</p>
+                <input type="checkbox" name="msg" >
+            </div>
+            <div>
+                <label for="options"><p class="form-description ">Plan:</p></label>
+
+                <select id="options" name="options" class="select-menu bg-gray-400 rounded-2xl" name="msg">
+                    <option value="option1">Basic</option>
+                    <option value="option2">Business</option>
+                    <option value="option3">Enterprise</option>
+                </select>
+            
+            </div>
+            <input type="hidden" name="_autoresponse" value="Hello there, Welcome to SIMPLICITY.org, we have recieved your request and are acting towards it, more information will be Emailed to you in a few.">
+            <input type="hidden" name="_template" value="table">
+            <button type="submit" id="submit-button">SUBMIT</button>
+            <p>we need your information in order to decide on the number of developers and designers needed, Your plan also decides on how you website would look and feel according to mentioned advantages.</p>
+
+         </form>
+
+        
+        
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
