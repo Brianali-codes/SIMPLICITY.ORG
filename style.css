@@ -568,7 +568,7 @@ html {
 @media only screen and (max-width: 720px) {
     
     #heading{
-        font-size: 80px;
+        font-size: 74px;
         margin-bottom:90px ;
     }
 
@@ -589,15 +589,20 @@ html {
         height: 40px;
         width: 100px;
     }
-    .FORM1{
-
-        width: 550px;
+    .FORM1{        
+        width: 360px;
     }
     .navigation{
         margin-left: 50px;
     }
     .nav-links{
         display: none;
+    }
+    #form-arranger{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
     }
     
     
