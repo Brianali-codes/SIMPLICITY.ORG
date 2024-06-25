@@ -10,11 +10,8 @@
 </head>
 
 <body class="background" background="images/web-final (2).jpg" id="BG">
-    
-    <div class="main">
 
-
-        <div id="main2">
+    <div id="main2">
 
             <div class="header">
 
@@ -24,7 +21,7 @@
 
                 <div class="nav-links">
                     <a href="#HOME">
-                        <ul><button class="Home " >Home</button></ul>
+                        <ul><button class="Home">Home</button></ul>
                     </a>
                     <a href="#PLANS">
                         <ul><button class="Plans">Plans</button></ul>
@@ -42,7 +39,28 @@
                 </div>
 
                 <div class="navbar">
-                    <img class="navigation" src="images/navbar.webp" alt="navbar">
+
+                    <img class="navigation" src="images/navbar.webp" alt="navbar" id="navigation" onclick="toggleNavbar()">
+                    
+                    <div class="navbar-open" id="navbar-open">
+
+                        <a href="#HOME">
+                            <ul><button class="Home">Home</button></ul>
+                        </a>
+                        <a href="#PLANS">
+                            <ul><button class="Plans">Plans</button></ul>
+                        </a>
+                        <a href="#ABOUT">
+                            <ul><button class="About">FAQ</button></ul>
+                        </a>
+                        <a href="#CONTACTS">
+                            <ul><button class="Contacts">Contacts</button></ul>
+                        </a>
+                        <a href="form.html">
+                            <ul><button class="start">Get started</button></ul>
+                        </a>
+                    </div>
+                    
                 </div>
 
             </div>
@@ -213,20 +231,33 @@
 
                 <div class="contact-info">
 
-                    <p class="">CONTACTS</p>
-                    <p>github</p>
-                    <p>Linkedin</p>
-                    <p>Facebook</p>
-                    <p>instagram</p>
-                    <p>Twitter</p>
+                    <div>
+                        <p class="">CONTACTS</p>
+                        <a href="https://github.com/gamerfunky78"><p>Github.</p></a>
+                        <a href="https://github.com/gamerfunky78"><p>Linkedin.</p></a>
+                        <a href="https://github.com/gamerfunky78"><p>Github.</p></a>
+                        <a href="https://github.com/gamerfunky78"><p>Twitter.</p></a>
+                    </div>
+
+
+                    <div>
+                        <p class="">NAVIGATION</p>
+                        <a href="#HOME"><p>Home</p></a>
+                        <a href="#ABOUT"><p>Faq</p></a>
+                        <a href="#github.com/gamerfunky78"><p>Other information</p></a>
+                        <a href="#Plans"><p>Plans</p></a>
+                    </div>
+                    
+
+
+
+                    
                 </div>
-        
+                <p style="color: white;">All Rights Reserved || simplicity.org || © 2024</p>
             </div>
-        </div>
-
-        <img src="images/ABS.jpg" style="width: 97.5vw; height: 900px;" alt="">
-
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
