@@ -23,11 +23,26 @@ html {
 .header {
     display: flex;
     flex-direction: row;
-    gap: 570px;
     position: fixed;
+    gap: 570px;
     padding: 2px;
 }
-
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+.navigation{
+    width: 60px;
+    height: 50px;
+    margin-top: -10px;
+    
+}
+.navigation:hover{
+    background-color: gray;
+    cursor: pointer;
+}
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -465,6 +480,10 @@ html {
     background-color:black;
     color: white;
     width: 97vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .FORM1{
@@ -524,13 +543,39 @@ html {
 }
 @media only screen and (max-width: 720px) {
     
-    .plan3{
+    #heading{
+        font-size: 80px;
+        margin-bottom:90px ;
+    }
+
+    #PLANS{
+        margin-top: 160px;
         display:flex;
         flex-direction: column;
         align-items:center ;
         justify-content: center;
     }
+    #ABOUT{
+        margin-top: 200px;
+    }
+    #landing-page{
+        margin-top: -20px;
+    }
+    #submit-button{
+        height: 40px;
+        width: 100px;
+    }
+    .FORM1{
 
+        width: 550px;
+    }
+    .navigation{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    
 
 
 }
