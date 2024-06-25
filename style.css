@@ -24,7 +24,7 @@ html {
     display: flex;
     flex-direction: row;
     position: fixed;
-    gap: 260px;
+    gap: 570px;
     padding: 2px;
 }
 .navbar{
@@ -36,6 +36,7 @@ html {
     width: 60px;
     height: 50px;
     margin-top: -10px;
+    display: none;
     
 }
 .navigation:hover{
@@ -554,19 +555,24 @@ html {
 .navbar-open{
     display: none;
     flex-direction: column;
-    width: 200px;
-    height: 300px; 
     padding: 2px;
     background-color:transparent;
     backdrop-filter: blur(100px);
-    margin-left: -100px;
-    margin-top: -10px;
     border-radius: 20px;
     animation: slide-in-top;
     animation-duration: 1s;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 @media only screen and (max-width: 720px) {
     
+    #main2{
+        max-width: 720px;
+        min-width: none;
+    }
     #heading{
         font-size: 74px;
         margin-bottom:90px ;
@@ -592,8 +598,14 @@ html {
     .FORM1{        
         width: 360px;
     }
+    .header{
+        width:400px;
+    }
     .navigation{
-        margin-left: 50px;
+        display: flex;
+        position:fixed;
+        top: 1;
+        right: 0;
     }
     .nav-links{
         display: none;
@@ -604,11 +616,32 @@ html {
         gap: 25px;
 
     }
+    .content2{
+        width: fit-content;
+        margin: 30px;
+        padding: 1px;
+    }
+    .contacts{
+        width: fit-content;
+        margin: none0px;
+        padding: 2px;
+    }
     
     
 
 
 }
-
-
+.closebutton{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.closebutton:hover{
+    cursor: pointer;
+    background-color: gray;
+}
 
