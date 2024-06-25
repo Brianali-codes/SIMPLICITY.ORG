@@ -151,13 +151,16 @@ html {
 }
 
 .Ourplans:hover {
-    scale: 1.01;
+    animation: change-color;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
 }
 
 .Getstarted:hover,
 .Ourplans:hover {
     cursor: pointer;
     box-shadow: 2px 2px 2px gray;
+    
 }
 
 .Getstarted:active,
@@ -395,12 +398,13 @@ html {
 }
 
 .faq {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    width: 96vw;
 }
 
 .faq-button {
@@ -420,60 +424,6 @@ html {
     cursor: pointer;
 }
 
-@keyframes spin {
-    25% {
-        transform: rotateZ(90deg);
-    }
-
-    50% {
-        transform: rotateZ(180deg);
-    }
-
-    75% {
-        transform: rotateZ(270deg);
-    }
-
-    100% {
-        transform: rotateZ(360deg);
-    }
-}
-
-@keyframes shake {
-    0% {
-        transform: rotateZ(-5deg);
-    }
-
-    25% {
-        transform: rotateZ(5deg);
-    }
-
-    50% {
-        transform: rotateZ(-5deg);
-    }
-
-    100% {
-        transform: rotateZ(5deg);
-    }
-}
-
-@keyframes change-color {
-    0% {
-        border-color: red;
-    }
-
-    50% {
-        border-color: green;
-    }
-
-    100% {
-        border-color: blue;
-    }
-}
-@keyframes slide-in-top{
-
-    from{transform: translateY(-150px);}
-
-}
 .contacts {
     background-color: transparent;
     height: 100vh;
@@ -587,6 +537,7 @@ html {
     }
     #ABOUT{
         margin-top: 200px;
+        
     }
     #landing-page{
         margin-top: -20px;
@@ -620,11 +571,20 @@ html {
         width: fit-content;
         margin: 30px;
         padding: 1px;
+        height: fit-content;
     }
     .contacts{
         width: fit-content;
         margin: none0px;
         padding: 2px;
+        height: fit-content;
+    }
+    #quiz{
+        font-size: 24px;
+        
+    }
+    #ans{
+        font-size: 18px;
     }
     
     
@@ -644,4 +604,141 @@ html {
     cursor: pointer;
     background-color: gray;
 }
+#openfaq{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    font-size: 20px;
+}
+.faq-button:hover{
+    animation: shake;
+    animation-duration: 0.5s;
+
+}
+.main-faq{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 10px;
+}
+.question{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+.faq-heading{
+    font-size: 20px;
+}
+.answer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+}
+.question1{
+    height: 50vh;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 20px;
+}
+.question1:hover{
+    border-style: white;
+    border-style: solid;
+    border-color: white;
+    animation: change-color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+
+    
+}
+
+@keyframes spin {
+    25% {
+        transform: rotateZ(90deg);
+    }
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    75% {
+        transform: rotateZ(270deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: rotateZ(-5deg);
+    }
+
+    25% {
+        transform: rotateZ(5deg);
+    }
+
+    50% {
+        transform: rotateZ(-5deg);
+    }
+
+    100% {
+        transform: rotateZ(5deg);
+    }
+}
+
+@keyframes change-color {
+    0% {
+        border-color: red;
+    }
+
+    50% {
+        border-color: green;
+    }
+
+    100% {
+        border-color: blue;
+    }
+}
+@keyframes slide-in-top{
+
+    from{transform: translateY(-150px);}
+
+}
+.back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: black;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+.back:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 
