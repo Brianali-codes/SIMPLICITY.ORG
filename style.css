@@ -3,12 +3,10 @@ html {
 }
 
 .background {
-    height: 100%;
     position: absolute;
     background-color: rgb(255, 255, 255);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    width: 100%;
     background-size: cover;
 
 }
@@ -24,7 +22,7 @@ html {
     display: flex;
     flex-direction: row;
     position: fixed;
-    gap: 570px;
+    gap: 670px;
     padding: 2px;
 }
 .navbar{
@@ -107,7 +105,7 @@ html {
 
 .content {
     height: 100vh;
-    width: 97vw;
+    width: 95vw;
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -117,7 +115,7 @@ html {
 
 .content2 {
     height: 100vh;
-    width: 97vw;
+    width: 96vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,6 +227,7 @@ html {
     height: 60vh;
     padding: 10px;
     border-radius: 20px;
+    width: 94vw;
 
 }
 
@@ -307,6 +306,7 @@ html {
 
 #CONTACTS{
     border-radius: 20px;
+    width: 95vw;
 }
 
 .plan-text {
@@ -404,7 +404,7 @@ html {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    width: 96vw;
+    width: 95vw;
 }
 
 .faq-button {
@@ -429,6 +429,7 @@ html {
     height: 100vh;
     padding: 10px;
     display: flex;
+    width: 95vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -437,7 +438,7 @@ html {
 .contact-info{
     background-color:rgb(0, 0, 0);
     color: white;
-    width: 97vw;
+    width: 94vw;
     display: flex;
     flex-direction: row;
     gap: 200px;
@@ -517,27 +518,29 @@ html {
     left: 0;
     right: 0;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     
     #main2{
-        max-width: 720px;
-        min-width: none;
+        width: fit-content;
     }
     #heading{
         font-size: 74px;
         margin-bottom:90px ;
     }
 
-    #PLANS{
-        margin-top: 160px;
-        display:flex;
+    .content3{
+        display: flex;
         flex-direction: column;
-        align-items:center ;
-        justify-content: center;
-    }
-    #ABOUT{
+        width: fit-content;
         margin-top: 200px;
+        margin-left:40px ;
         
+    }
+    .content2{
+        width: fit-content;
+        margin-left: -20px;
+        scale: 0.9;
+        margin-top: 200px;
     }
     #landing-page{
         margin-top: -20px;
@@ -567,17 +570,11 @@ html {
         gap: 25px;
 
     }
-    .content2{
-        width: fit-content;
-        margin: 30px;
-        padding: 1px;
-        height: fit-content;
-    }
     .contacts{
         width: fit-content;
-        margin: none0px;
-        padding: 2px;
         height: fit-content;
+        scale: 0.9;
+        margin-left: -30px;
     }
     #quiz{
         font-size: 24px;
