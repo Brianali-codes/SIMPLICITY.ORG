@@ -452,6 +452,7 @@ html {
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 #form-arranger{
     display: grid;
@@ -520,7 +521,7 @@ html {
 }
 @media only screen and (max-width: 768px) {
     
-    #main2{
+    .main2{
         width: fit-content;
         display: grid;
         grid-template-columns: 1, 1fr;
@@ -555,7 +556,8 @@ html {
         width: 360px;
     }
     .header{
-        width:400px;
+        width:375px;
+        
     }
     .navigation{
         display: flex;
@@ -589,6 +591,7 @@ html {
         grid-template-columns: repeat(1, 1fr);
         width: fit-content;
         height: 100vh;
+        scale: 0.9;
         gap: 30px;
         margin-bottom: 2400px;
     }
