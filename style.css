@@ -777,6 +777,7 @@ html {
 }   
 .review-card:hover,#review-card:hover{
     cursor: pointer;
+    background-color: rgb(236, 236, 236);
 
 }
 
